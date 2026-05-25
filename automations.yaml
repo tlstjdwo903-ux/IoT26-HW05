@@ -1,0 +1,32 @@
+- id: '1779552012896'
+  alias: 새로운 자동화
+  description: ''
+  triggers:
+  - trigger: time
+    at: '20:51:00'
+  conditions: []
+  actions:
+  - action: switch.turn_on
+    metadata: {}
+    target:
+      entity_id:
+      - switch.fan_office
+      - switch.light_desk
+    data: {}
+  mode: single
+- id: '1779552104183'
+  alias: 새로운 자동화
+  description: ''
+  triggers:
+  - trigger: time
+    at: '20:51:10'
+  conditions: []
+  actions:
+  - action: switch.turn_off
+    metadata: {}
+    target:
+      entity_id:
+      - switch.fan_office
+      - switch.light_desk
+    data: {}
+  mode: single
